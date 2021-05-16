@@ -1,7 +1,7 @@
-version: "3.9"
+version: "3"
 services:
   chronobot:
-#    build: .
+    #    build: .
     image: plhery/chronodose_twitter:latest
     restart: always
     environment:
@@ -11,5 +11,6 @@ services:
       ACCESS_TOKEN: XXXX
       ACCESS_SECRET: XXXX
 #      CHECK_INTERVAL_SEC: 60
-#      MIN_DOSES: 1
+#      MIN_SLOTS: 1
 #      TIMEZONE: Europe/Paris
+#      GID_BLACKLIST: XXX

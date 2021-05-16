@@ -8,10 +8,10 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
 
-COPY *.ts ./
 COPY tsconfig.json ./
+COPY src/ ./src/
 RUN npm run build
 
 COPY . .
 
-CMD [ "node", "chronobot.js" ]
+CMD [ "node", "dist/chronobot.js" ]
